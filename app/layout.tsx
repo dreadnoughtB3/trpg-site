@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { cn } from '@/lib/utils';
-import { Open_Sans } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/providers/theme-provider";
 
-
-const font = Open_Sans({ subsets: ["latin"] });
+const notoSansJP = Noto_Sans_JP({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Stellaria Unoffcial Site",
@@ -21,12 +20,9 @@ export default function RootLayout({
 
       <html lang="en" suppressHydrationWarning>
         <body className={cn(
-          font.className,
+          notoSansJP.className,
           "bg-white dark:bg-[#313338]"
         )}>
-          <header>
-
-          </header>
           <main>
             <ThemeProvider
               attribute="class"
