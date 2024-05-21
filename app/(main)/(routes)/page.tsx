@@ -23,7 +23,7 @@ import BG02 from '@/public/bg_02.png';
 import BG03 from '@/public/bg_03.png';
 import BG04 from '@/public/bg_04.png';
 
-import Fantasia from '@/public/fantasia.png';
+import Fantasia from '@/public/Fantasia.png';
 import Nocturne from '@/public/Nocturne.png';
 
 
