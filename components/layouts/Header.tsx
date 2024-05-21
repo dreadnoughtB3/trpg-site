@@ -2,6 +2,7 @@ import { Cormorant_Garamond } from "next/font/google";
 import { Button } from '@/components/ui/button';
 import { IconButton } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link as Scroll } from "react-scroll";
 
 const notoSansJP = Cormorant_Garamond({ subsets: ["latin"], weight: ["400"] });
 
@@ -16,10 +17,18 @@ const HeaderComponent = () => {
 					</div>
 					<div className="w-full">
             <div className="hidden justify-evenly md:flex">
-              <Button variant="headerbutton">GAME</Button>
-              <Button variant="headerbutton">CHARACTER</Button>
-              <Button variant="headerbutton">WORLD</Button>
-              <Button variant="headerbutton">STORY</Button>
+              <Button variant="headerbutton">
+				        <Scroll to="game" offset={-50} smooth={true}>GAME</Scroll>
+				      </Button>
+              <Button variant="headerbutton">
+                <Scroll to="character" offset={-50} smooth={true}>CHARACTER</Scroll>
+              </Button>
+              <Button variant="headerbutton">
+                <Scroll to="world" offset={-50} smooth={true}>WORLD</Scroll>
+              </Button>
+              <Button variant="headerbutton">
+              < Scroll to="story" offset={-50} smooth={true}>STORY</Scroll>
+              </Button>
             </div>
             <div className="md:hidden flex justify-end">
               <IconButton >
