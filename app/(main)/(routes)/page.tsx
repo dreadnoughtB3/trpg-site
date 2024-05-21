@@ -20,7 +20,7 @@ import ParticleBackground from '@/components/ParticleBackground';
 import ParticleBackgroundAlt from '@/components/ParticleBackgroundAlt';
 import HeaderComponent from "@/components/layouts/Header";
 
-import BG_SP from '@/public/Pic2.png'
+import BG01 from '@/public/bg_01.png';
 import BG02 from '@/public/bg_02.png';
 import BG03 from '@/public/bg_03.png';
 import BG04 from '@/public/bg_04.png';
@@ -106,7 +106,7 @@ export default function Home() {
       </div>
       <div className="hidden md:visible md:block">
         <div className='relative'>
-          <img className="w-full z-0" src="/bg_01.png"></img>
+          <Image className="w-full z-0" alt="now loading..." src={BG01}></Image>
           <div className="absolute top-0 w-full h-full">
             <ParticleBackgroundAlt></ParticleBackgroundAlt>
           </div>
